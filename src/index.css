@@ -33,11 +33,10 @@
 .eink-paper-bg {
   background-color: #F2F1EB;
   background-image: 
-    radial-gradient(#111111 0.4px, transparent 0.4px),
-    radial-gradient(#111111 0.4px, #F2F1EB 0.4px);
+    radial-gradient(rgba(17, 17, 17, 0.04) 0.5px, transparent 0.5px),
+    radial-gradient(rgba(17, 17, 17, 0.04) 0.5px, #F2F1EB 0.5px);
   background-size: 20px 20px;
   background-position: 0 0, 10px 10px;
-  background-opacity: 0.03;
 }
 
 /* Fine Dotted Grid */
