@@ -2,22 +2,18 @@ import { useState, useEffect } from 'react';
 import { CustomCursor } from './components/CustomCursor';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
-import { AboutSection } from './components/AboutSection';
 import { ServicesSection } from './components/ServicesSection';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { RestaurantBotDemo } from './components/RestaurantBotDemo';
-import { ProcessSection } from './components/ProcessSection';
-import { TechSection } from './components/TechSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 
 export function App() {
   const [activeSection, setActiveSection] = useState('home');
-  const [selectedServiceForContact, setSelectedServiceForContact] = useState<string>('Cafe & Restaurant Website');
+  const [selectedService, setSelectedService] = useState('Restaurant Digital Solutions');
 
-  // Track active section on scroll
   useEffect(() => {
-    const sectionIds = ['home', 'about', 'services', 'projects', 'bot-demo', 'process', 'tech', 'contact'];
+    const sectionIds = ['home', 'services', 'projects', 'bot-demo', 'contact'];
 
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
@@ -27,7 +23,6 @@ export function App() {
         const el = document.getElementById(id);
         if (el) {
           const rect = el.getBoundingClientRect();
-          // If section top is above middle of screen
           if (rect.top <= windowHeight * 0.4) {
             setActiveSection(id);
             break;
@@ -41,12 +36,12 @@ export function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSelectService = (serviceName: string) => {
-    setSelectedServiceForContact(serviceName);
+  const handleSelectService = (serviceTitle: string) => {
+    setSelectedService(serviceTitle);
   };
 
   const handleGetBotClick = () => {
-    setSelectedServiceForContact('Restaurant WhatsApp Ordering Bot');
+    setSelectedService('Business Automation');
     const contactElem = document.getElementById('contact');
     if (contactElem) {
       contactElem.scrollIntoView({ behavior: 'smooth' });
@@ -54,26 +49,23 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#08090D] text-[#F5F5F7] relative selection:bg-[#9B7BFF]/30 selection:text-[#42D9FF]">
-      {/* Desktop Custom Follower Cursor */}
+    <div className="min-h-screen bg-[#F2F1EB] text-[#111111] relative selection:bg-[#7555FF] selection:text-white eink-paper-bg">
+      {/* Desktop E-Ink Tactile Cursor */}
       <CustomCursor />
 
-      {/* Floating Glass Navbar */}
+      {/* Minimal Sticky Swiss Navigation */}
       <Navbar activeSection={activeSection} />
 
-      {/* Main Content Sections */}
+      {/* Main Curated Sections */}
       <main id="main-content">
         <HeroSection />
-        <AboutSection />
-        <ServicesSection onSelectServiceForContact={handleSelectService} />
+        <ServicesSection onSelectService={handleSelectService} />
         <FeaturedProjects />
         <RestaurantBotDemo onGetBotClick={handleGetBotClick} />
-        <ProcessSection />
-        <TechSection />
-        <ContactSection preselectedService={selectedServiceForContact} />
+        <ContactSection preselectedService={selectedService} />
       </main>
 
-      {/* Footer */}
+      {/* Swiss Editorial Footer */}
       <Footer />
     </div>
   );

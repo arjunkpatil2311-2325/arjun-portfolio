@@ -1,184 +1,112 @@
 // Portfolio Configuration & Contact Data
-// Arjun can easily customize his phone number, email, and social profiles here.
+// 3D E-Ink Edition for ARJUN
 
 export const PORTFOLIO_CONFIG = {
   name: 'ARJUN',
-  title: 'Web Developer & Automation Creator',
-  tagline: 'I BUILD DIGITAL EXPERIENCES THAT BUILD BUSINESSES.',
-  subtagline: 'Premium websites, intelligent automation and AI-powered experiences for modern businesses.',
+  label: 'INDEPENDENT WEB DEVELOPER & AUTOMATION CREATOR',
+  headline: 'I BUILD DIGITAL EXPERIENCES THAT BUILD BUSINESSES.',
+  description: 'I create premium websites and intelligent automation experiences for modern businesses, cafes and restaurants.',
   
-  // Contact Configuration (Arjun: replace with your real phone number and email!)
+  // Contact Configuration
   contact: {
-    // International format without '+' or spaces for WhatsApp (e.g. 919876543210)
-    whatsappNumber: '919876543210', 
+    whatsappNumber: '919876543210', // Replace with real phone number (international without '+' or spaces)
     displayPhone: '+91 98765 43210',
     email: 'hello@arjunbuilds.com',
-    location: 'Available Globally / Remote',
-    availability: 'Accepting New Projects for Q1/Q2',
-    github: 'https://github.com',
-    linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com'
+    github: 'https://github.com/arjunkpatil2311-2325',
+    instagram: 'https://instagram.com/arjunbuilds',
+    availability: 'AVAILABLE FOR Q1/Q2',
   },
 
+  // 3 Curated Editorial Services
   services: [
     {
-      id: 'business-websites',
       number: '01',
-      title: 'BUSINESS WEBSITES',
-      tagline: 'High-converting digital presence',
-      description: 'Custom, blazing-fast web experiences engineered to establish authority, captivate visitors, and convert casual browsers into high-ticket clients.',
-      features: [
-        'Modern, bespoke design (no generic templates)',
-        'Responsive mobile-first fluid layout',
-        'High-speed SEO & Core Web Vitals optimization',
-        'Lead capture & instant enquiry delivery'
+      title: 'WEB DEVELOPMENT',
+      subtitle: 'Modern, responsive websites & digital experiences',
+      description: 'Bespoke web architectures engineered with crisp typography, thoughtful motion, and sub-second performance. Built to command respect and convert visitors.',
+      deliverables: [
+        'Custom frontend engineering (React, TypeScript, Three.js)',
+        'Mobile-first responsive layouts & editorial micro-details',
+        'SEO, Core Web Vitals & lightweight asset pipelines',
+        'Headless CMS & custom interactive configurators'
       ],
-      badge: 'High Impact',
-      accentColor: 'from-[#9B7BFF] to-[#7952F5]'
+      tag: 'Core Discipline'
     },
     {
-      id: 'cafe-restaurant',
       number: '02',
-      title: 'CAFE & RESTAURANT WEBSITES',
-      tagline: 'Tempting menus & direct orders',
-      description: 'Specialized digital hubs for food & beverage businesses featuring mouth-watering food galleries, dynamic interactive menus, and friction-free customer ordering.',
-      features: [
-        'Dynamic visual digital menus with dietary filters',
-        'Food & ambience showcase galleries',
-        'Direct WhatsApp ordering (0% commission fees)',
-        'Table reservation & event enquiry systems',
-        'Google Maps & opening hours sync'
+      title: 'RESTAURANT DIGITAL SOLUTIONS',
+      subtitle: 'Digital menus, websites & ordering interfaces',
+      description: 'Dedicated digital ecosystems for cafes, roasteries, and dining venues. Eliminate 30% aggregator commissions with direct customer ordering and visual storytelling.',
+      deliverables: [
+        'Dynamic digital menus with tasting notes & dietary filters',
+        'Ambient cafe photography & brand narrative layouts',
+        'Friction-free WhatsApp ordering & table enquiry links',
+        'Google Maps, opening hours & events integration'
       ],
-      badge: 'Popular for Cafes',
-      accentColor: 'from-[#42D9FF] to-[#0099FF]'
+      tag: 'Hospitality Focus'
     },
     {
-      id: 'automation-bots',
       number: '03',
-      title: 'AUTOMATION BOTS',
-      tagline: '24/7 autonomous customer desk',
-      description: 'Smart WhatsApp and web chatbots that handle orders, answer FAQs, share menus, and qualify leads round the clock without adding staff overhead.',
-      features: [
-        'WhatsApp automated customer enquiry bots',
-        'Interactive instant digital menu dispatch',
-        'Order calculation & kitchen dispatch webhook',
-        'Instant FAQ answers (timings, parking, dietary)',
-        'Seamless human escalation when required'
+      title: 'BUSINESS AUTOMATION',
+      subtitle: 'Automated support & WhatsApp enquiry workflows',
+      description: 'Autonomous conversational systems that answer customer queries, dispatch menus, and capture incoming leads 24/7 so you can focus on core operations.',
+      deliverables: [
+        'WhatsApp customer enquiry & order dispatch bots',
+        'Instant FAQ answers (timings, parking, dietary, pricing)',
+        'Order enquiry formatting & kitchen webhook triggers',
+        'Custom business knowledge base & CRM connections'
       ],
-      badge: 'Top ROI',
-      accentColor: 'from-[#9B7BFF] to-[#42D9FF]'
-    },
-    {
-      id: 'ai-assistants',
-      number: '04',
-      title: 'AI BUSINESS ASSISTANTS',
-      tagline: 'Bespoke intelligent workflows',
-      description: 'Custom AI implementations trained on your exact business documentation, catalog, and customer history to provide natural, human-like answers.',
-      features: [
-        'Natural conversational customer interactions',
-        'Knowledge base integration (PDFs, menus, docs)',
-        'Automated lead intake & CRM sync',
-        'Custom workflow triggers via APIs'
-      ],
-      badge: 'Next-Gen',
-      accentColor: 'from-[#7952F5] to-[#9B7BFF]'
+      tag: 'Zero Overhead'
     }
   ],
 
+  // 3 Selected Projects
   projects: [
     {
       id: 'hamperhub',
+      number: '01',
       title: 'HAMPERHUB',
       category: 'E-commerce / Custom Gift Builder',
-      status: 'Active Development',
-      isRealProject: true,
-      badge: 'Flagship Project',
-      summary: 'A personalized gifting platform where customers can explore products and build bespoke gift hampers with dynamic pricing, 3D box previews, and seamless checkout.',
-      details: [
-        'Interactive 3-step custom hamper builder with real-time price tally',
-        'Curated selection of gourmet artisan snacks, treats, and luxury packaging',
-        'Seamless cart state & checkout flow with personalized gift card notes',
-        'Designed specifically for corporate gifting & festive seasons'
+      badge: 'REAL PROJECT • IN DEVELOPMENT',
+      isReal: true,
+      githubUrl: 'https://github.com/arjunkpatil2311-2325/hamperhub',
+      summary: 'A personalized gifting platform where customers explore luxury goods and build bespoke gift hampers with real-time price calculations and custom packaging.',
+      highlights: [
+        'Interactive step-by-step custom hamper box customizer',
+        'Dynamic inventory tallying and artisan treat curation',
+        'Tailored for corporate gifting and festive luxury orders'
       ],
-      tags: ['React', 'TypeScript', 'Tailwind CSS', 'State Management', 'E-Commerce'],
-      color: '#9B7BFF'
+      tech: ['React', 'TypeScript', 'Tailwind CSS', 'State Engine']
     },
     {
-      id: 'cafe-digital',
+      id: 'restaurant-digital',
+      number: '02',
       title: 'THE ARTISAN CAFE & ROASTERY',
       category: 'Restaurant Website Concept',
-      status: 'Interactive Concept Demo',
-      isRealProject: false,
-      badge: 'Concept Showcase',
-      summary: 'A premium digital experience for artisanal cafes and roasteries featuring interactive menus, ambience storytelling, customer reviews, and direct table booking.',
-      details: [
-        'Filterable menu with coffee roast profiles, tasting notes & allergens',
-        'Mobile-optimized touch ordering interface with zero friction',
-        'Direct integration to WhatsApp for instant customer inquiries',
-        'Aesthetic dark-mode photography layouts engineered for high engagement'
+      badge: 'CONCEPT SHOWCASE',
+      isReal: false,
+      summary: 'An editorial digital showcase for specialty coffee and dining spaces, featuring interactive roast profiles, filterable seasonal menus, and table reservation flows.',
+      highlights: [
+        'Filterable digital menu with tasting notes & pricing',
+        'Direct WhatsApp inquiry hooks with 0% platform cuts',
+        'Tactile Swiss typography adapted for mobile dining guests'
       ],
-      tags: ['Next-Gen UI', 'Responsive Design', 'Interactive Menu', 'WhatsApp Ready'],
-      color: '#42D9FF'
+      tech: ['Next-Gen UI', 'Interactive Menu', 'Mobile-First']
     },
     {
       id: 'restaurant-automation',
-      title: 'ORDERFLOW RESTAURANT BOT',
-      category: 'Business Automation Concept',
-      status: 'Architecture & Workflow Demo',
-      isRealProject: false,
-      badge: 'Automation Showcase',
-      summary: 'An autonomous WhatsApp assistant concept designed for restaurants to eliminate missed customer calls, share instant menus, and capture takeout orders.',
-      details: [
-        'Automated replies for restaurant location, opening hours & table queries',
-        'Generates formatted WhatsApp order receipts directly for the kitchen staff',
-        'Zero commission fees compared to third-party delivery aggregators',
-        'Built with webhook triggers, structured payload validation & error handling'
+      number: '03',
+      title: 'ORDERFLOW BOT',
+      category: 'Interactive Bot Demo',
+      badge: 'INTERACTIVE ARCHITECTURE DEMO',
+      isReal: false,
+      summary: 'An autonomous conversational assistant concept engineered for hospitality venues to eliminate missed phone calls and route customer orders directly to staff.',
+      highlights: [
+        'End-to-end simulated WhatsApp ordering engine',
+        'Zero commission structure for independent food businesses',
+        'Instant FAQ resolution for parking, menus, and reservations'
       ],
-      tags: ['Automation', 'WhatsApp Bot', 'Webhooks', 'Business Logic'],
-      color: '#A78BFA'
+      tech: ['Automation', 'WhatsApp Bot', 'Webhooks']
     }
-  ],
-
-  processSteps: [
-    {
-      step: '01',
-      title: 'DISCOVER',
-      subtitle: 'Clarifying the Vision',
-      description: 'We analyze your business, customer friction points, menu or product catalog, and define the exact digital experience and automation that will drive measurable results.'
-    },
-    {
-      step: '02',
-      title: 'DESIGN',
-      subtitle: 'Crafting the Aesthetic',
-      description: 'Designing bespoke, ultra-modern layouts with smooth micro-interactions, responsive mobile interfaces, and clean conversational flows that match your brand identity.'
-    },
-    {
-      step: '03',
-      title: 'DEVELOP',
-      subtitle: 'Building the Machine',
-      description: 'Clean coding using high-performance modern tech (React, TypeScript, Tailwind, Three.js) and integrating robust WhatsApp and automation webhooks with real error handling.'
-    },
-    {
-      step: '04',
-      title: 'LAUNCH',
-      subtitle: 'Delivering Excellence',
-      description: 'Full deployment to fast global CDNs, domain setup, end-to-end device testing, WhatsApp bot live verification, and a clear walkthrough on managing your new system.'
-    }
-  ],
-
-  technologies: [
-    { name: 'React', category: 'Frontend', level: 'Core Stack', icon: 'Atom' },
-    { name: 'TypeScript', category: 'Frontend', level: 'Core Stack', icon: 'Code2' },
-    { name: 'Tailwind CSS', category: 'Frontend', level: 'Core Stack', icon: 'Palette' },
-    { name: 'Three.js / 3D', category: 'Creative 3D', level: 'Core Stack', icon: 'Box' },
-    { name: 'JavaScript (ES6+)', category: 'Frontend', level: 'Core Stack', icon: 'FileCode' },
-    { name: 'HTML5 & CSS3', category: 'Frontend', level: 'Core Stack', icon: 'Layout' },
-    { name: 'Firebase', category: 'Cloud & Data', level: 'Core Stack', icon: 'Flame' },
-    { name: 'GitHub & CI/CD', category: 'Tools', level: 'Core Stack', icon: 'GitBranch' },
-    { name: 'AI APIs', category: 'Automation', level: 'Core Stack', icon: 'Cpu' },
-    { name: 'Automation & Webhooks', category: 'Automation', level: 'Core Stack', icon: 'Workflow' },
-    { name: 'Next.js', category: 'Frontend', level: 'Exploring', icon: 'Sparkles' },
-    { name: 'Node.js / Express', category: 'Backend', level: 'Exploring', icon: 'Server' }
   ]
 };
-
